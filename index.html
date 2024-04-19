@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+
+      <form >
+        <div class="header__rela">
+        <div class="header__bar">
+        <input class="header__search" type="search" id="ytSearch" placeholder="入力してください" />
+        <button class="header__Btn" id="searchBtn">検索</button>
+      </div>
+      </form>
+      <select class="header__List  searchlist"></select></div>
+    </header>
+    <div id="player"></div>
+
+    <nav>
+      <ul class="menu">
+        <li id="speed">
+          <form id="doSpeed">
+            <select name="speed">
+              <option value="0.25">0.25</option>
+              <option value="0.5">0.5</option>
+              <option value="1.0" selected>1</option>
+              <option value="1.5">1.5</option>
+              <option value="2">2</option>
+            </select>
+          </form>
+        </li>
+        <li id="do10sPrev"><img src="./img/Back10.svg" alt="" /></li>
+
+        <li class="Doplay">
+          <img class="DoImage" src="./img/Play.svg" />
+        </li>
+        <li id="do10sNext"><img src="./img/Skip10.svg" alt="" /></li>
+       <div class="absolute"> <li id="mute"><img class="muteimg" src="./img/Mute.svg" alt="" /></li>
+
+        <li>
+          <label><input type="range"
+                     min="0"
+                     max="100"
+                     name="volume"
+                     id="volume"
+                     value="50"
+                   />
+                 </label>
+               </li>
+    </div>
+
+      </ul>
+
+    </nav>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/ChangeSpeed.js"></script>
+    <script src="./js/ChangeVolume.js"></script>
+    <script src="./js/Search.js"></script>
+  </body>
+</html>
