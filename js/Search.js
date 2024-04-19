@@ -1,7 +1,7 @@
 const SearchList = document.querySelector(".searchlist");
 
 function ytSearch(val) {
-  const key = "AIzaSyCJ3HOiFQJ-GPoRFI_5yFNPuMVRorId4Gw"; //自分のキーに書き換えます。
+  const key = process.env.YOUTUBE_API_KEY; //自分のキーに書き換えます。
   const num = 10;
   const part = "snippet";
   const type = "video";
