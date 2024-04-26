@@ -6,7 +6,7 @@ ul {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #b9b9b9;
+  background-color: #fff;
 }
 .menu {
   margin: 30px auto;
@@ -16,7 +16,7 @@ body {
 }
 #player {
   display: block;
-  margin: 30px auto 0;
+  margin: 100px auto 0;
   width: 80vw;
   height: 80vh;
 }
@@ -35,17 +35,25 @@ body {
 }
 
 .header {
+  transition: top 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 20px 0;
+  z-index: 99;
+  background-color: #fc5603;
   &__search {
     padding: 0;
     margin: 0;
     border: 1px solid #000;
     padding-left: 10px;
+    padding: 10px;
     border-radius: 20px;
     width: 500px;
   }
   &__Btn {
     margin: 0;
-    padding: 2px 6px;
+    padding: 10px;
     border: 1px solid #000;
   }
   &__bar {
@@ -64,5 +72,8 @@ body {
     max-width: 500px;
     border-radius: 10px;
     appearance: none;
+  }
+  &--hidden {
+    top: -100%;
   }
 }
