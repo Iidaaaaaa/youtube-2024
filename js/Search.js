@@ -1,3 +1,4 @@
+import { YOUTUBE_API_KEY } from "./APIKEY.js";
 const SearchList = document.querySelector(".searchlist");
 
 function ytSearch(val) {
